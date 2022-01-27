@@ -39,3 +39,12 @@ jobs:
           platforms: linux/arm,linux/amd64,linux/386
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/zad2dk:latest
+          
+    - name: Build and push
+      id: docker_build_multistage
+      uses: docker/build-push-action@v2
+      with:
+          context: ./
+          file: ./Dockerfile.multistage
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}.multistage/zad2dk:latest
