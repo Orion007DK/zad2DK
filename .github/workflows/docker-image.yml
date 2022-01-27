@@ -55,7 +55,6 @@ jobs:
       with:
           context: ./
           file: ./Dockerfile
-          platforms: linux/arm,linux/amd64,linux/386
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/zad2dk-from-cache:latest
           cache-from: type=registry,ref=${{ secrets.DOCKERHUB_USERNAME }}/zad2dk-from-cache:latest
