@@ -65,7 +65,7 @@ jobs:
           file: ./Dockerfile
           platforms: linux/arm,linux/amd64,linux/386
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/zad2dk-fromCache:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/zad2dk-from-cache:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new
           
