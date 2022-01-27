@@ -38,4 +38,4 @@ jobs:
           file: ./dockerfile
           platforms: linux/arm,linux/amd64,linux/386
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/zad2DK:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/zad2dk:latest
